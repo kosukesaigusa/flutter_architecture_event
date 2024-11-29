@@ -1,0 +1,138 @@
+/* @theme base */
+@import 'gaia';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
+
+* {
+  font-family: 'Noto Sans JP', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Apple Color Emoji', sans-serif;
+}
+
+section {
+  padding: 16px 40px 16px 40px;
+  font-size: 30px;
+  cursor: url('assets/laser-red.png'), pointer;
+}
+
+section::after {
+  padding-right: 8px;
+  padding-bottom: 0px;
+  opacity: 0.6;
+}
+
+h1 {
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 72px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+.note {
+  font-size: 24px;
+  color: #666;
+}
+
+/* code block style */
+section pre {
+  border-radius: 8px;
+}
+
+/* inline code style */
+section code {
+  padding: 4px 8px 4px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+code[class*='language-'],
+code[class*='language-'] span {
+  font-family: 'Fira Code', monospace;
+}
+
+section ul,
+ol {
+  padding-left: 32px;
+  margin-top: 16px;
+  /* margin-bottom: 48px; */
+}
+
+.center-goal-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.center-goal-container h2 {
+  font-size: 40px;
+  line-height: 1.5;
+  font-weight: bold;
+  padding: 0 2rem;
+  margin-bottom: 24px;
+}
+
+.center-goal-container .note {
+  font-size: 24px;
+  line-height: 1.5;
+  color: #666;
+  padding: 0 2rem;
+}
+
+.content-left-60 {
+  width: 60%;
+}
+
+/* .two-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-columns > div {
+  flex: 1;
+  padding: 10px;
+} */
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.two-columns > div {
+  flex: 1;
+  padding: 10px;
+  min-width: 0;
+}
+
+.two-columns.ratio-4-6 > div:first-child {
+  flex: 4;
+}
+.two-columns.ratio-4-6 > div:last-child {
+  flex: 6;
+}
+
+.two-columns.ratio-3-7 > div:first-child {
+  flex: 3;
+}
+.two-columns.ratio-3-7 > div:last-child {
+  flex: 7;
+}
+
+.two-columns.ratio-6-4 > div:first-child {
+  flex: 6;
+}
+.two-columns.ratio-6-4 > div:last-child {
+  flex: 4;
+}
+
+.two-columns.ratio-7-3 > div:first-child {
+  flex: 7;
+}
+.two-columns.ratio-7-3 > div:last-child {
+  flex: 3;
+}
